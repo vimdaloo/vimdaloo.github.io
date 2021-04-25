@@ -1,6 +1,6 @@
 ## Welcome to Vimdaloo!
 
-_Vimdaloo will be the home of various Vim and Neovim plugins and utilities._
+_Vimdaloo is a home for Vim and Neovim Plugins and Tools._
 
 ### Projects
 
