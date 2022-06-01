@@ -30,6 +30,10 @@
 <div class="heading">Contents</div>
 <ul>
 <li><a href="#vimdaloo.version.NvimVersion">Class <code>vimdaloo.version.NvimVersion</code></a></li>
+<li><a href="#Description"><p>Description</p>
+</a></li>
+<li><a href="#API"><p>API</p>
+</a></li>
 </ul>
 </div>
 <div class="classes">
@@ -67,8 +71,49 @@
 <li class="class self">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ <span>vimdaloo.version.NvimVersion</span></li>
 </ul>
 </div>
-<p><a href="https://neovim.io/">https://neovim.io/</a></p>
+</div>
+</div>
+<div class="section">
+<h2 class="section" id="Description">Description
 
+<a class="permalink" href="#Description" title="Permalink to this definition">¶</a>
+</h2>
+<div class="inner">
+<p>A semantic version populated from <a href="https://neovim.io"><code>Neovim</code></a></p>
+<pre><code class="language-lua">-- SemanticVersion base class gets populated from:
+--   io.popen(vim.v.progpath .. ' -v')
+
+-- NvimVersion extension class gets populated from:
+--   vim.version()
+--     NVIM v0.7.0
+       {
+         api_compatible = 0,
+         api_level = 9,
+         api_prerelease = false,
+         major = 0,
+         minor = 7,
+         patch = 0
+       }
+--     NVIM v0.8.0-dev+302-gaf2899aee
+       {
+         api_compatible = 0,
+         api_level = 10,
+         api_prerelease = true,
+         major = 0,
+         minor = 8,
+         patch = 0,
+         prerelease = true
+       }
+</code></pre>
+
+</div>
+</div>
+<div class="section">
+<h2 class="section" id="API">API
+
+<a class="permalink" href="#API" title="Permalink to this definition">¶</a>
+</h2>
+<div class="inner">
 <div class="synopsis">
 <h3>Synopsis</h3>
 <div class="heading">Methods</div>
