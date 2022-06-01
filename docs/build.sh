@@ -7,6 +7,7 @@ main() {
     local script_dir=$(dirname "${script_file}")
 
     cd "${script_dir}/../../vimdaloo-core/lua"
+    rm -rf "${script_dir}/api"
     luadox \
         --config "${script_dir}/luadoc.conf" \
         --outdir "${script_dir}/api" \
