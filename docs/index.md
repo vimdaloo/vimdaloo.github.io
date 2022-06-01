@@ -6,4 +6,4 @@ Vimdaloo is a home for Object-Oriented Lua Libraries and Neovim Plugins.
 
 * [Vimdaloo on GitHub](https://github.com/vimdaloo)
 * [Vimdaloo Core on GitHub](https://github.com/vimdaloo/vimdaloo-core)
-* [Vimdaloo Core API](/api)
+* [Vimdaloo Core Docs](/docs)
