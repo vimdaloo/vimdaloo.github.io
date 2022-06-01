@@ -18,8 +18,7 @@
 <div class="button iconleft"><a href="https://github.com/vimdaloo" title=""><img src="../img/i-github.svg?7653a2d" alt=""/><span>vimdaloo@github</span></a></div>
 </div>
 <div class="group three">
-<div class="button iconleft"><a href="../class/vimdaloo.version.VimdalooVersion.html" title="vimdaloo.version.VimdalooVersion"><img src="../img/i-left.svg?7653a2d" alt=""/><span>Previous</span></a></div>
-<div class="button iconright"><a href="../module/vimdaloo.html" title="vimdaloo"><span>Next</span><img src="../img/i-right.svg?7653a2d" alt=""/></a></div>
+<div class="button iconleft"><a href="../module/vimdaloo.html" title="vimdaloo"><img src="../img/i-left.svg?7653a2d" alt=""/><span>Previous</span></a></div>
 </div>
 </div>
 <div class="sidebar">
@@ -47,8 +46,8 @@
 <div class="modules">
 <div class="heading">Modules</div>
 <ul>
-<li class="selected"><a href="../module/vimdaloo.version.html">vimdaloo.version</a></li>
 <li><a href="../module/vimdaloo.html">vimdaloo</a></li>
+<li class="selected"><a href="../module/vimdaloo.version.html">vimdaloo.version</a></li>
 </ul>
 </div>
 </div>
@@ -66,19 +65,48 @@
 <table class="functions ">
 <tr>
 <td class="name"><a href="#M.lua"><var>lua</var></a>()</td>
-<td class="doc"></td>
+<td class="doc"><p>returns singleton</p>
+</td>
 </tr>
 <tr>
 <td class="name"><a href="#M.luajit"><var>luajit</var></a>()</td>
-<td class="doc"></td>
+<td class="doc"><p>returns singleton</p>
+</td>
 </tr>
 <tr>
 <td class="name"><a href="#M.nvim"><var>nvim</var></a>()</td>
-<td class="doc"></td>
+<td class="doc"><p>returns singleton</p>
+</td>
 </tr>
 <tr>
 <td class="name"><a href="#M.vimdaloo"><var>vimdaloo</var></a>()</td>
-<td class="doc"></td>
+<td class="doc"><p>returns singleton</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#M.versions"><var>versions</var></a>()</td>
+<td class="doc"><p>returns singletons</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#M.values"><var>values</var></a>()</td>
+<td class="doc"><p>returns values</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#M.string"><var>string</var></a>()</td>
+<td class="doc"><p>returns values string</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#M.print"><var>print</var></a>()</td>
+<td class="doc"><p>prints values string</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#M.notify"><var>notify</var></a>()</td>
+<td class="doc"><p>notifies values string (or prints if not in nvim)</p>
+</td>
 </tr>
 </table>
 </div>
@@ -88,13 +116,13 @@
 <a class="permalink" href="#M.lua" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
+<p>returns singleton</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em><a href="../class/vimdaloo.version.LuaVersion.html">vimdaloo.version.LuaVersion</a></em>)</td>
-<td class="doc"><p>the LuaVersion singelton</p>
-</td>
+<td class="doc"></td>
 </tr>
 </table>
 </dd>
@@ -103,13 +131,13 @@
 <a class="permalink" href="#M.luajit" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
+<p>returns singleton</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em><a href="../class/vimdaloo.version.LuaJITVersion.html">vimdaloo.version.LuaJITVersion</a></em>)</td>
-<td class="doc"><p>the LuaJITVersion singelton</p>
-</td>
+<td class="doc"></td>
 </tr>
 </table>
 </dd>
@@ -118,13 +146,13 @@
 <a class="permalink" href="#M.nvim" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
+<p>returns singleton</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em><a href="../class/vimdaloo.version.NvimVersion.html">vimdaloo.version.NvimVersion</a></em>)</td>
-<td class="doc"><p>the NvimVersion singelton</p>
-</td>
+<td class="doc"></td>
 </tr>
 </table>
 </dd>
@@ -133,15 +161,117 @@
 <a class="permalink" href="#M.vimdaloo" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
+<p>returns singleton</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em><a href="../class/vimdaloo.version.VimdalooVersion.html">vimdaloo.version.VimdalooVersion</a></em>)</td>
-<td class="doc"><p>the VimdalooVersion singelton</p>
+<td class="doc"></td>
+</tr>
+</table>
+</dd>
+<dt id="M.versions">
+<span class="icon"></span><var>versions</var>()
+<a class="permalink" href="#M.versions" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>returns singletons</p>
+
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="name">1.</td>
+<td class="types">(<em><a href="../class/vimdaloo.version.LuaVersion.html">vimdaloo.version.LuaVersion</a></em>)</td>
+<td class="doc"><p>lua</p>
+</td>
+</tr>
+<tr>
+<td class="name">2.</td>
+<td class="types">(<em><a href="../class/vimdaloo.version.LuaJITVersion.html">vimdaloo.version.LuaJITVersion</a></em>)</td>
+<td class="doc"><p>lujit</p>
+</td>
+</tr>
+<tr>
+<td class="name">3.</td>
+<td class="types">(<em><a href="../class/vimdaloo.version.NvimVersion.html">vimdaloo.version.NvimVersion</a></em>)</td>
+<td class="doc"><p>nvim</p>
+</td>
+</tr>
+<tr>
+<td class="name">4.</td>
+<td class="types">(<em><a href="../class/vimdaloo.version.VimdalooVersion.html">vimdaloo.version.VimdalooVersion</a></em>)</td>
+<td class="doc"><p>vimdaloo</p>
 </td>
 </tr>
 </table>
+</dd>
+<dt id="M.values">
+<span class="icon"></span><var>values</var>()
+<a class="permalink" href="#M.values" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>returns values</p>
+
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="name">1.</td>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>lua</p>
+</td>
+</tr>
+<tr>
+<td class="name">2.</td>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>lujit</p>
+</td>
+</tr>
+<tr>
+<td class="name">3.</td>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>nvim</p>
+</td>
+</tr>
+<tr>
+<td class="name">4.</td>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>vimdaloo</p>
+</td>
+</tr>
+</table>
+</dd>
+<dt id="M.string">
+<span class="icon"></span><var>string</var>()
+<a class="permalink" href="#M.string" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>returns values string</p>
+
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>versions</p>
+</td>
+</tr>
+</table>
+</dd>
+<dt id="M.print">
+<span class="icon"></span><var>print</var>()
+<a class="permalink" href="#M.print" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>prints values string</p>
+
+</dd>
+<dt id="M.notify">
+<span class="icon"></span><var>notify</var>()
+<a class="permalink" href="#M.notify" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>notifies values string (or prints if not in nvim)</p>
+
 </dd>
 </dl>
 </div>
