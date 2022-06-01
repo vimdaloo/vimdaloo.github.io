@@ -61,12 +61,6 @@
 
 <div class="synopsis">
 <h3>Synopsis</h3>
-<div class="heading">Fields</div>
-<table class="fields ">
-<tr>
-<td class="name"><a href="#class.static._singleton"><var>class.static._singleton</var></a></td>
-</tr>
-</table>
 <div class="heading">Functions</div>
 <table class="functions ">
 <tr>
@@ -81,19 +75,13 @@
 <td class="name"><a href="#M.singleton"><var>singleton</var></a>()</td>
 <td class="doc"></td>
 </tr>
+<tr>
+<td class="name"><a href="#M.setup"><var>setup</var></a>()</td>
+<td class="doc"><p>Only available within Neovim, adding commands <code>:VimdalooVersionNotify</code> and <code>:VimdalooVersionPrint</code></p>
+</td>
+</tr>
 </table>
 </div>
-<h3 class="fields">Fields</h3>
-<dl class="fields">
-<dt id="class.static._singleton">
-<span class="icon"></span><var>class.static._singleton</var>
-<a class="permalink" href="#class.static._singleton" title="Permalink to this definition">¶</a>
-</dt>
-<dd>
-
-</dd>
-</dl>
-<h3 class="functions">Functions</h3>
 <dl class="functions">
 <dt id="M.class">
 <span class="icon"></span><var>class</var>(<em>...</em>)
@@ -162,6 +150,23 @@
 <tr>
 <td class="types">(<em>function</em>)</td>
 <td class="doc"><p>the class turned into a singleton</p>
+</td>
+</tr>
+</table>
+</dd>
+<dt id="M.setup">
+<span class="icon"></span><var>setup</var>(<em>user_config</em>)
+<a class="permalink" href="#M.setup" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>Only available within Neovim, adding commands <code>:VimdalooVersionNotify</code> and <code>:VimdalooVersionPrint</code></p>
+
+<div class="heading">Parameters</div>
+<table class="parameters">
+<tr>
+<td class="name"><var>user_config</var></td>
+<td class="types">(<em>table</em>)</td>
+<td class="doc"><p>optional custom user configuration</p>
 </td>
 </tr>
 </table>
