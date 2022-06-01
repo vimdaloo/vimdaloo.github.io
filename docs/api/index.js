@@ -1,6 +1,5 @@
 var docs = [
 {path:"class/vimdaloo.lang.Object.html", type:"class", title:"vimdaloo.lang.Object", text:"vimdaloo.lang.Object"},
-{path:"class/vimdaloo.color.Color.html", type:"class", title:"vimdaloo.color.Color", text:""},
 {path:"class/vimdaloo.version.LuaJITVersion.html", type:"class", title:"vimdaloo.version.LuaJITVersion", text:"https://luajit.org/ext_jit.html"},
 {path:"class/vimdaloo.version.LuaVersion.html", type:"class", title:"vimdaloo.version.LuaVersion", text:"https://www.lua.org/manual/5.4/manual.htmlpdf-_VERSION"},
 {path:"class/vimdaloo.version.NvimVersion.html", type:"class", title:"vimdaloo.version.NvimVersion", text:"https://neovim.io/"},
@@ -12,8 +11,6 @@ var docs = [
 {path:"module/vimdaloo.html#M.class", type:"field", title:"class", text:""},
 {path:"class/vimdaloo.lang.Object.html#Object.initialize", type:"function", title:"Object", text:"constructor"},
 {path:"class/vimdaloo.lang.Object.html#Object.toString", type:"function", title:"Object:toString", text:"string formatter"},
-{path:"class/vimdaloo.color.Color.html#Color.initialize", type:"function", title:"Color", text:"constructor"},
-{path:"class/vimdaloo.color.Color.html#Color.getName", type:"function", title:"Color:getName", text:"name accessor"},
 {path:"class/vimdaloo.version.LuaJITVersion.html#LuaJITVersion.initialize", type:"function", title:"LuaJITVersion", text:"constructor"},
 {path:"class/vimdaloo.version.LuaVersion.html#LuaVersion.initialize", type:"function", title:"LuaVersion", text:"constructor"},
 {path:"class/vimdaloo.version.NvimVersion.html#NvimVersion.initialize", type:"function", title:"NvimVersion", text:"constructor"},
