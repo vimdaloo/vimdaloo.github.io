@@ -1,6 +1,6 @@
 # Welcome to Vimdaloo
 
-![Vim icon](/img/vimdaloo-icon_200x200.png)
+![Vimdaloo](/img/vimdaloo-icon_200x200.png)
 
 Vimdaloo is a home for Object-Oriented Lua Libraries and Neovim Plugins.
 
