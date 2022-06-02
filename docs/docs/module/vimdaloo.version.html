@@ -15,7 +15,7 @@
 </div>
 <div class="group two">
 <div class="button iconleft"><a href="https://vimdaloo.io" title=""><img src="../../img/vimdaloo-icon.svg" alt=""/><span>vimdaloo.io</span></a></div>
-<div class="button iconleft"><a href="https://github.com/vimdaloo" title=""><img src="../img/i-github.svg?7653a2d" alt=""/><span>vimdaloo@github</span></a></div>
+<div class="button iconleft"><a href="https://github.com/vimdaloo" title=""><img src="../img/i-github.svg?7653a2d" alt=""/><span>github.com/vimdaloo</span></a></div>
 </div>
 <div class="group three">
 <div class="button iconleft"><a href="../class/vimdaloo.version.VimdalooVersion.html" title="vimdaloo.version.VimdalooVersion"><img src="../img/i-left.svg?7653a2d" alt=""/><span>Previous</span></a></div>
@@ -77,42 +77,42 @@
 </tr>
 <tr>
 <td class="name"><a href="#M.luajit"><var>luajit</var></a>()</td>
-<td class="doc"><p>returns the singleton LuaVersion object</p>
+<td class="doc"><p>returns the singleton LuaJITVersion object</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#M.nvim"><var>nvim</var></a>()</td>
-<td class="doc"><p>returns the singleton LuaVersion object</p>
+<td class="doc"><p>returns the singleton NvimVersion object</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#M.vimdaloo"><var>vimdaloo</var></a>()</td>
-<td class="doc"><p>returns the singleton LuaVersion object</p>
+<td class="doc"><p>returns the singleton VimdalooVersion object</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#M.versions"><var>versions</var></a>()</td>
-<td class="doc"><p>returns the singleton SemanticVersion objects</p>
+<td class="doc"><p>returns a table of singleton version objects</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#M.values"><var>values</var></a>()</td>
-<td class="doc"><p>returns values</p>
+<td class="doc"><p>returns a table of version values</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#M.string"><var>string</var></a>()</td>
-<td class="doc"><p>returns values string</p>
+<td class="doc"><p>returns combined versions string</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#M.print"><var>print</var></a>()</td>
-<td class="doc"><p>prints values string</p>
+<td class="doc"><p>prints combined versions string</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#M.notify"><var>notify</var></a>()</td>
-<td class="doc"><p>notifies values string (or prints if not in nvim)</p>
+<td class="doc"><p>notifies combined versions string via <code>vim.notify()</code>, or falls back to printing if not inside nvim</p>
 </td>
 </tr>
 </table>
@@ -138,7 +138,7 @@
 <a class="permalink" href="#M.luajit" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>returns the singleton LuaVersion object</p>
+<p>returns the singleton LuaJITVersion object</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
@@ -153,7 +153,7 @@
 <a class="permalink" href="#M.nvim" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>returns the singleton LuaVersion object</p>
+<p>returns the singleton NvimVersion object</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
@@ -168,7 +168,7 @@
 <a class="permalink" href="#M.vimdaloo" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>returns the singleton LuaVersion object</p>
+<p>returns the singleton VimdalooVersion object</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
@@ -183,32 +183,13 @@
 <a class="permalink" href="#M.versions" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>returns the singleton SemanticVersion objects</p>
+<p>returns a table of singleton version objects</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
-<td class="name">1.</td>
-<td class="types">(<em><a href="../class/vimdaloo.version.LuaVersion.html">vimdaloo.version.LuaVersion</a></em>)</td>
-<td class="doc"><p>lua</p>
-</td>
-</tr>
-<tr>
-<td class="name">2.</td>
-<td class="types">(<em><a href="../class/vimdaloo.version.LuaJITVersion.html">vimdaloo.version.LuaJITVersion</a></em>)</td>
-<td class="doc"><p>lujit</p>
-</td>
-</tr>
-<tr>
-<td class="name">3.</td>
-<td class="types">(<em><a href="../class/vimdaloo.version.NvimVersion.html">vimdaloo.version.NvimVersion</a></em>)</td>
-<td class="doc"><p>nvim</p>
-</td>
-</tr>
-<tr>
-<td class="name">4.</td>
-<td class="types">(<em><a href="../class/vimdaloo.version.VimdalooVersion.html">vimdaloo.version.VimdalooVersion</a></em>)</td>
-<td class="doc"><p>vimdaloo</p>
+<td class="types">(<em>table</em>)</td>
+<td class="doc"><p>{ lua = <a href="../class/vimdaloo.version.LuaVersion.html">vimdaloo.version.LuaVersion</a>, luajit = <a href="../class/vimdaloo.version.LuaJITVersion.html">vimdaloo.version.LuaJITVersion</a>, nvim = <a href="../class/vimdaloo.version.NvimVersion.html">vimdaloo.version.NvimVersion</a>, vimdaloo = <a href="../class/vimdaloo.version.VimdalooVersion.html">vimdaloo.version.VimdalooVersion</a> }</p>
 </td>
 </tr>
 </table>
@@ -218,32 +199,13 @@
 <a class="permalink" href="#M.values" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>returns values</p>
+<p>returns a table of version values</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
-<td class="name">1.</td>
-<td class="types">(<em>string</em>)</td>
-<td class="doc"><p>lua</p>
-</td>
-</tr>
-<tr>
-<td class="name">2.</td>
-<td class="types">(<em>string</em>)</td>
-<td class="doc"><p>lujit</p>
-</td>
-</tr>
-<tr>
-<td class="name">3.</td>
-<td class="types">(<em>string</em>)</td>
-<td class="doc"><p>nvim</p>
-</td>
-</tr>
-<tr>
-<td class="name">4.</td>
-<td class="types">(<em>string</em>)</td>
-<td class="doc"><p>vimdaloo</p>
+<td class="types">(<em>table</em>)</td>
+<td class="doc"><p>e.g. { lua = &quot;5.1&quot;, luajit = &quot;2.1.0-beta3&quot;, nvim = &quot;0.7.0&quot;, vimdaloo = &quot;0.0.1-1&quot; }</p>
 </td>
 </tr>
 </table>
@@ -253,13 +215,13 @@
 <a class="permalink" href="#M.string" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>returns values string</p>
+<p>returns combined versions string</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em>string</em>)</td>
-<td class="doc"><p>versions</p>
+<td class="doc"><p>e.g. &quot;Lua 5.1, LuaJIT 2.1.0-beta3, NVIM v0.7.0, Vimdaloo 0.0.1-1&quot;</p>
 </td>
 </tr>
 </table>
@@ -269,7 +231,7 @@
 <a class="permalink" href="#M.print" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>prints values string</p>
+<p>prints combined versions string</p>
 
 </dd>
 <dt id="M.notify">
@@ -277,7 +239,7 @@
 <a class="permalink" href="#M.notify" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>notifies values string (or prints if not in nvim)</p>
+<p>notifies combined versions string via <code>vim.notify()</code>, or falls back to printing if not inside nvim</p>
 
 </dd>
 </dl>
