@@ -15,7 +15,7 @@
 </div>
 <div class="group two">
 <div class="button iconleft"><a href="https://vimdaloo.io" title=""><img src="../../img/vimdaloo-icon.svg" alt=""/><span>vimdaloo.io</span></a></div>
-<div class="button iconleft"><a href="https://github.com/vimdaloo" title=""><img src="../img/i-github.svg?7653a2d" alt=""/><span>vimdaloo@github</span></a></div>
+<div class="button iconleft"><a href="https://github.com/vimdaloo" title=""><img src="../img/i-github.svg?7653a2d" alt=""/><span>github.com/vimdaloo</span></a></div>
 </div>
 <div class="group three">
 <div class="button iconleft"><a href="../class/vimdaloo.version.SemanticVersion.html" title="vimdaloo.version.SemanticVersion"><img src="../img/i-left.svg?7653a2d" alt=""/><span>Previous</span></a></div>
@@ -86,7 +86,7 @@
 <a class="permalink" href="#Description" title="Permalink to this definition">¶</a>
 </h2>
 <div class="inner">
-<p>A simple version value holder.</p>
+<p>A simple version prefix/value holder.</p>
 
 </div>
 </div>
@@ -106,15 +106,25 @@
 </td>
 </tr>
 <tr>
+<td class="name"><a href="#Version.getPrefix"><var>Version:getPrefix</var></a>()</td>
+<td class="doc"><p>prefix accessor</p>
+</td>
+</tr>
+<tr>
 <td class="name"><a href="#Version.getValue"><var>Version:getValue</var></a>()</td>
 <td class="doc"><p>value accessor</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#Version.toString"><var>Version:toString</var></a>()</td>
+<td class="doc"><p>full version string (prefix + value); overrides <a href="../class/vimdaloo.lang.Object.html">vimdaloo.lang.Object</a> <code>:toString()</code></p>
 </td>
 </tr>
 </table>
 </div>
 <dl class="functions">
 <dt id="Version.initialize">
-<span class="icon"></span><var>Version</var>(<em>value</em>)
+<span class="icon"></span><var>Version</var>(<em>prefix</em>, <em>value</em>)
 <a class="permalink" href="#Version.initialize" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
@@ -122,6 +132,11 @@
 
 <div class="heading">Parameters</div>
 <table class="parameters">
+<tr>
+<td class="name"><var>prefix</var></td>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"></td>
+</tr>
 <tr>
 <td class="name"><var>value</var></td>
 <td class="types">(<em>string</em>)</td>
@@ -133,6 +148,22 @@
 <tr>
 <td class="types">(<em><a href="../class/vimdaloo.version.Version.html">vimdaloo.version.Version</a></em>)</td>
 <td class="doc"></td>
+</tr>
+</table>
+</dd>
+<dt id="Version.getPrefix">
+<span class="icon"></span><var>Version:getPrefix</var>()
+<a class="permalink" href="#Version.getPrefix" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>prefix accessor</p>
+
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>prefix</p>
+</td>
 </tr>
 </table>
 </dd>
@@ -149,6 +180,21 @@
 <td class="types">(<em>string</em>)</td>
 <td class="doc"><p>value</p>
 </td>
+</tr>
+</table>
+</dd>
+<dt id="Version.toString">
+<span class="icon"></span><var>Version:toString</var>()
+<a class="permalink" href="#Version.toString" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>full version string (prefix + value); overrides <a href="../class/vimdaloo.lang.Object.html">vimdaloo.lang.Object</a> <code>:toString()</code></p>
+
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"></td>
 </tr>
 </table>
 </dd>
