@@ -45,6 +45,7 @@
 <div class="classes">
 <div class="heading">Classes</div>
 <ul>
+<li><a href="../class/vimdaloo.lang.Class.html">…lang.Class</a></li>
 <li><a href="../class/vimdaloo.lang.Object.html">…lang.Object</a></li>
 <li><a href="../class/vimdaloo.version.LuaJITVersion.html">…version.LuaJITVersion</a></li>
 <li><a href="../class/vimdaloo.version.LuaVersion.html">…version.LuaVersion</a></li>
@@ -102,44 +103,44 @@
 <div class="inner">
 <div class="synopsis">
 <h3>Synopsis</h3>
-<div class="heading">Methods</div>
+<div class="heading">Functions</div>
 <table class="functions ">
 <tr>
-<td class="name"><a href="#SemanticVersion.initialize"><var>SemanticVersion</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.SemanticVersion.new"><var>SemanticVersion</var></a>()</td>
 <td class="doc"><p>constructor</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#SemanticVersion.getMajor"><var>SemanticVersion:getMajor</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.SemanticVersion.getMajor"><var>getMajor</var></a>()</td>
 <td class="doc"><p>major getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#SemanticVersion.getMinor"><var>SemanticVersion:getMinor</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.SemanticVersion.getMinor"><var>getMinor</var></a>()</td>
 <td class="doc"><p>minor getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#SemanticVersion.getPatch"><var>SemanticVersion:getPatch</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.SemanticVersion.getPatch"><var>getPatch</var></a>()</td>
 <td class="doc"><p>patch getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#SemanticVersion.getPrerelease"><var>SemanticVersion:getPrerelease</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.SemanticVersion.getPrerelease"><var>getPrerelease</var></a>()</td>
 <td class="doc"><p>prerelease getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#SemanticVersion.getBuild"><var>SemanticVersion:getBuild</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.SemanticVersion.getBuild"><var>getBuild</var></a>()</td>
 <td class="doc"><p>build getter</p>
 </td>
 </tr>
 </table>
 </div>
 <dl class="functions">
-<dt id="SemanticVersion.initialize">
-<span class="icon"></span><var>SemanticVersion</var>(<em>prefix</em>, <em>value</em>)
-<a class="permalink" href="#SemanticVersion.initialize" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.SemanticVersion.new">
+<span class="icon"></span><var>SemanticVersion</var>(<em>self</em>, <em>prefix</em>, <em>value</em>)
+<a class="permalink" href="#vimdaloo.version.SemanticVersion.new" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>constructor</p>
@@ -147,14 +148,21 @@
 <div class="heading">Parameters</div>
 <table class="parameters">
 <tr>
+<td class="name"><var>self</var></td>
+<td class="types">()</td>
+<td class="doc"></td>
+</tr>
+<tr>
 <td class="name"><var>prefix</var></td>
 <td class="types">(<em>string</em>)</td>
-<td class="doc"></td>
+<td class="doc"><p>the prefix</p>
+</td>
 </tr>
 <tr>
 <td class="name"><var>value</var></td>
 <td class="types">(<em>string</em>)</td>
-<td class="doc"></td>
+<td class="doc"><p>the value</p>
+</td>
 </tr>
 </table>
 <div class="heading">Return Values</div>
@@ -165,9 +173,9 @@
 </tr>
 </table>
 </dd>
-<dt id="SemanticVersion.getMajor">
-<span class="icon"></span><var>SemanticVersion:getMajor</var>()
-<a class="permalink" href="#SemanticVersion.getMajor" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.SemanticVersion.getMajor">
+<span class="icon"></span><var>getMajor</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.SemanticVersion.getMajor" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>major getter</p>
@@ -175,15 +183,15 @@
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
-<td class="types">(<em>number</em>)</td>
-<td class="doc"><p>major</p>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>major the major section</p>
 </td>
 </tr>
 </table>
 </dd>
-<dt id="SemanticVersion.getMinor">
-<span class="icon"></span><var>SemanticVersion:getMinor</var>()
-<a class="permalink" href="#SemanticVersion.getMinor" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.SemanticVersion.getMinor">
+<span class="icon"></span><var>getMinor</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.SemanticVersion.getMinor" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>minor getter</p>
@@ -191,15 +199,15 @@
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
-<td class="types">(<em>number</em>)</td>
-<td class="doc"><p>minor</p>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>minor the minor section</p>
 </td>
 </tr>
 </table>
 </dd>
-<dt id="SemanticVersion.getPatch">
-<span class="icon"></span><var>SemanticVersion:getPatch</var>()
-<a class="permalink" href="#SemanticVersion.getPatch" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.SemanticVersion.getPatch">
+<span class="icon"></span><var>getPatch</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.SemanticVersion.getPatch" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>patch getter</p>
@@ -207,15 +215,15 @@
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
-<td class="types">(<em>number</em>)</td>
-<td class="doc"><p>patch</p>
+<td class="types">(<em>string</em>)</td>
+<td class="doc"><p>patch the patch section</p>
 </td>
 </tr>
 </table>
 </dd>
-<dt id="SemanticVersion.getPrerelease">
-<span class="icon"></span><var>SemanticVersion:getPrerelease</var>()
-<a class="permalink" href="#SemanticVersion.getPrerelease" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.SemanticVersion.getPrerelease">
+<span class="icon"></span><var>getPrerelease</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.SemanticVersion.getPrerelease" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>prerelease getter</p>
@@ -224,14 +232,14 @@
 <table class="returns">
 <tr>
 <td class="types">(<em>string</em>)</td>
-<td class="doc"><p>prerelease</p>
+<td class="doc"><p>prerelease the prerelease section</p>
 </td>
 </tr>
 </table>
 </dd>
-<dt id="SemanticVersion.getBuild">
-<span class="icon"></span><var>SemanticVersion:getBuild</var>()
-<a class="permalink" href="#SemanticVersion.getBuild" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.SemanticVersion.getBuild">
+<span class="icon"></span><var>getBuild</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.SemanticVersion.getBuild" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>build getter</p>
@@ -240,7 +248,7 @@
 <table class="returns">
 <tr>
 <td class="types">(<em>string</em>)</td>
-<td class="doc"><p>build</p>
+<td class="doc"><p>build the build section</p>
 </td>
 </tr>
 </table>
