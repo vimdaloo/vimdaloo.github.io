@@ -45,6 +45,7 @@
 <div class="classes">
 <div class="heading">Classes</div>
 <ul>
+<li><a href="../class/vimdaloo.lang.Class.html">…lang.Class</a></li>
 <li><a href="../class/vimdaloo.lang.Object.html">…lang.Object</a></li>
 <li><a href="../class/vimdaloo.version.LuaJITVersion.html">…version.LuaJITVersion</a></li>
 <li><a href="../class/vimdaloo.version.LuaVersion.html">…version.LuaVersion</a></li>
@@ -122,42 +123,42 @@
 <div class="inner">
 <div class="synopsis">
 <h3>Synopsis</h3>
-<div class="heading">Methods</div>
+<div class="heading">Functions</div>
 <table class="functions ">
 <tr>
-<td class="name"><a href="#NvimVersion.initialize"><var>NvimVersion:instance</var></a>()</td>
-<td class="doc"><p>singleton</p>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.new"><var>NvimVersion</var></a>()</td>
+<td class="doc"><p>constructor</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#NvimVersion.getApiCompatible"><var>NvimVersion:getApiCompatible</var></a>()</td>
-<td class="doc"><p>api compatible getter</p>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.getApiCompatible"><var>getApiCompatible</var></a>()</td>
+<td class="doc"><p>api_compatible getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#NvimVersion.getApiLevel"><var>NvimVersion:getApiLevel</var></a>()</td>
-<td class="doc"><p>api level getter</p>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.getApiLevel"><var>getApiLevel</var></a>()</td>
+<td class="doc"><p>api_level getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#NvimVersion.isApiPrerelease"><var>NvimVersion:isApiPrerelease</var></a>()</td>
-<td class="doc"><p>api prerelease getter</p>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.getApiPrerelease"><var>getApiPrerelease</var></a>()</td>
+<td class="doc"><p>api_prerelease getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#NvimVersion.isPrerelease"><var>NvimVersion:isPrerelease</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.getPrerelease"><var>getPrerelease</var></a>()</td>
 <td class="doc"><p>prerelease getter</p>
 </td>
 </tr>
 </table>
 </div>
 <dl class="functions">
-<dt id="NvimVersion.initialize">
-<span class="icon"></span><var>NvimVersion:instance</var>()
-<a class="permalink" href="#NvimVersion.initialize" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.new">
+<span class="icon"></span><var>NvimVersion</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.new" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>singleton</p>
+<p>constructor</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
@@ -167,57 +168,57 @@
 </tr>
 </table>
 </dd>
-<dt id="NvimVersion.getApiCompatible">
-<span class="icon"></span><var>NvimVersion:getApiCompatible</var>()
-<a class="permalink" href="#NvimVersion.getApiCompatible" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.getApiCompatible">
+<span class="icon"></span><var>getApiCompatible</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.getApiCompatible" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>api compatible getter</p>
+<p>api_compatible getter</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em>number</em>)</td>
-<td class="doc"><p>get api compatible</p>
+<td class="doc"><p>api_compatible the api compatible</p>
 </td>
 </tr>
 </table>
 </dd>
-<dt id="NvimVersion.getApiLevel">
-<span class="icon"></span><var>NvimVersion:getApiLevel</var>()
-<a class="permalink" href="#NvimVersion.getApiLevel" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.getApiLevel">
+<span class="icon"></span><var>getApiLevel</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.getApiLevel" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>api level getter</p>
+<p>api_level getter</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em>number</em>)</td>
-<td class="doc"><p>get api level</p>
+<td class="doc"><p>api_level the api level</p>
 </td>
 </tr>
 </table>
 </dd>
-<dt id="NvimVersion.isApiPrerelease">
-<span class="icon"></span><var>NvimVersion:isApiPrerelease</var>()
-<a class="permalink" href="#NvimVersion.isApiPrerelease" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.getApiPrerelease">
+<span class="icon"></span><var>getApiPrerelease</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.getApiPrerelease" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>api prerelease getter</p>
+<p>api_prerelease getter</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>true if api prerelease</p>
+<td class="doc"><p>api_prerelease if api prerelease</p>
 </td>
 </tr>
 </table>
 </dd>
-<dt id="NvimVersion.isPrerelease">
-<span class="icon"></span><var>NvimVersion:isPrerelease</var>()
-<a class="permalink" href="#NvimVersion.isPrerelease" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.getPrerelease">
+<span class="icon"></span><var>getPrerelease</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.getPrerelease" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>prerelease getter</p>
@@ -226,7 +227,7 @@
 <table class="returns">
 <tr>
 <td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>true if prerelease</p>
+<td class="doc"><p>prerelease if prerelease</p>
 </td>
 </tr>
 </table>
