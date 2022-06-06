@@ -19,6 +19,7 @@
 </div>
 <div class="group three">
 <div class="button iconleft"><a href="../module/vimdaloo.version.html" title="vimdaloo.version"><img src="../img/i-left.svg?7653a2d" alt=""/><span>Previous</span></a></div>
+<div class="button iconright"><a href="../module/vimdaloo.color.html" title="vimdaloo.color"><span>Next</span><img src="../img/i-right.svg?7653a2d" alt=""/></a></div>
 </div>
 </div>
 <div class="sidebar">
@@ -60,6 +61,7 @@
 <li><a href="../module/vimdaloo.lang.html">vimdaloo.lang</a></li>
 <li><a href="../module/vimdaloo.version.html">vimdaloo.version</a></li>
 <li class="selected"><a href="../module/vimdaloo.html">vimdaloo</a></li>
+<li><a href="../module/vimdaloo.color.html">vimdaloo.color</a></li>
 </ul>
 </div>
 </div>
@@ -70,6 +72,9 @@
 </h2>
 <div class="inner">
 <p>The <a href="../module/vimdaloo.html"><code>vimdaloo</code></a> module.</p>
+<div class="see">See also <a href="../module/vimdaloo.lang.html">vimdaloo.lang</a></div>
+<div class="see">See also <a href="../module/vimdaloo.version.html">vimdaloo.version</a></div>
+<div class="see">See also <a href="../module/vimdaloo.color.html">vimdaloo.color</a></div>
 
 </div>
 </div>
@@ -79,14 +84,16 @@
 <a class="permalink" href="#Details" title="Permalink to this definition">¶</a>
 </h2>
 <div class="inner">
-<p>Core Vimdaloo system.</p>
+<p>Vimdaloo system root.</p>
 <pre><code class="language-lua">-- accept the defaults
 require('vimdaloo').setup()
 
 -- …or override the defaults
 require('vimdaloo').setup({
-    env = _G,
-    base_path = vim and 'lua' or 'src',
+    lang = {
+        env = _G,
+        base_path = vim and 'lua' or 'src',
+    },
 })
 </code></pre>
 
@@ -100,29 +107,88 @@ require('vimdaloo').setup({
 <div class="inner">
 <div class="synopsis">
 <h3>Synopsis</h3>
+<div class="heading">Fields</div>
+<table class="fields ">
+<tr>
+<td class="name"><a href="#vimdaloo._VERSION"><var>_VERSION</var></a></td>
+<td class="doc"><p>Vimdaloo 0.0.1-1</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#vimdaloo._DESCRIPTION"><var>_DESCRIPTION</var></a></td>
+<td class="doc"><p>Object-Oriented Lua Library for Neovim</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#vimdaloo._URL"><var>_URL</var></a></td>
+<td class="doc"><p>https://github.com/vimdaloo/vimdaloo-core</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#vimdaloo._LICENSE"><var>_LICENSE</var></a></td>
+<td class="doc"><p>Apache License 2.0</p>
+</td>
+</tr>
+</table>
 <div class="heading">Functions</div>
 <table class="functions ">
 <tr>
 <td class="name"><a href="#M.setup"><var>setup</var></a>()</td>
-<td class="doc"><p>Initializes the entire <a href="../module/vimdaloo.html"><code>vimdaloo</code></a> system, including all submodules</p>
+<td class="doc"><p>Initializes the entire <a href="../module/vimdaloo.html"><code>vimdaloo</code></a> system, including all submodules in this order: <a href="../module/vimdaloo.lang.html"><code>lang</code></a>, <a href="../module/vimdaloo.version.html"><code>version</code></a>, <a href="../module/vimdaloo.color.html"><code>color</code></a></p>
 </td>
 </tr>
 </table>
 </div>
+<h3 class="fields">Fields</h3>
+<dl class="fields">
+<dt id="vimdaloo._VERSION">
+<span class="icon"></span><var>_VERSION</var>
+<a class="permalink" href="#vimdaloo._VERSION" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>Vimdaloo 0.0.1-1</p>
+
+</dd>
+<dt id="vimdaloo._DESCRIPTION">
+<span class="icon"></span><var>_DESCRIPTION</var>
+<a class="permalink" href="#vimdaloo._DESCRIPTION" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>Object-Oriented Lua Library for Neovim</p>
+
+</dd>
+<dt id="vimdaloo._URL">
+<span class="icon"></span><var>_URL</var>
+<a class="permalink" href="#vimdaloo._URL" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>https://github.com/vimdaloo/vimdaloo-core</p>
+
+</dd>
+<dt id="vimdaloo._LICENSE">
+<span class="icon"></span><var>_LICENSE</var>
+<a class="permalink" href="#vimdaloo._LICENSE" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>Apache License 2.0</p>
+
+</dd>
+</dl>
+<h3 class="functions">Functions</h3>
 <dl class="functions">
 <dt id="M.setup">
 <span class="icon"></span><var>setup</var>(<em>config</em>)
 <a class="permalink" href="#M.setup" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>Initializes the entire <a href="../module/vimdaloo.html"><code>vimdaloo</code></a> system, including all submodules.</p>
+<p>Initializes the entire <a href="../module/vimdaloo.html"><code>vimdaloo</code></a> system, including all submodules in this order: <a href="../module/vimdaloo.lang.html"><code>lang</code></a>, <a href="../module/vimdaloo.version.html"><code>version</code></a>, <a href="../module/vimdaloo.color.html"><code>color</code></a>. You can do this, or individually call each of <em>just</em> the submodules' setups that you care about. However, if you do so, <a href="../module/vimdaloo.lang.html"><code>lang</code></a> <strong>always</strong> needs to be called first.</p>
 
 <div class="heading">Parameters</div>
 <table class="parameters">
 <tr>
 <td class="name"><var>config</var></td>
 <td class="types">(<em>table</em>)</td>
-<td class="doc"><p>optional custom user configuration</p>
+<td class="doc"><p>Optional custom user configuration. Submodules' setup functions get called passing <em>just</em> the config's matching sub-config, based on name.</p>
 </td>
 </tr>
 </table>
