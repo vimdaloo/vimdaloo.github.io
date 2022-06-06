@@ -86,7 +86,7 @@
 <a class="permalink" href="#Description" title="Permalink to this definition">¶</a>
 </h2>
 <div class="inner">
-<p>A semantic version populated from <a href="https://neovim.io"><code>nvim</code></a> <code>-v</code> and <a href="https://neovim.io/doc/user/lua.html#vim.version"><code>vim.version()</code></a></p>
+<p>The semantic version singleton populated from <a href="https://neovim.io"><code>nvim</code></a> <code>-v</code> and <a href="https://neovim.io/doc/user/lua.html#vim.version"><code>vim.version()</code></a></p>
 <pre><code class="language-lua">-- SemanticVersion parent class gets populated from:
 --   io.popen(vim.v.progpath .. ' -v')
 
@@ -126,8 +126,8 @@
 <div class="heading">Functions</div>
 <table class="functions ">
 <tr>
-<td class="name"><a href="#vimdaloo.version.NvimVersion.new"><var>NvimVersion</var></a>()</td>
-<td class="doc"><p>constructor</p>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.singleton"><var>instance</var></a>()</td>
+<td class="doc"><p>singleton</p>
 </td>
 </tr>
 <tr>
@@ -153,12 +153,12 @@
 </table>
 </div>
 <dl class="functions">
-<dt id="vimdaloo.version.NvimVersion.new">
-<span class="icon"></span><var>NvimVersion</var>(<em>self</em>)
-<a class="permalink" href="#vimdaloo.version.NvimVersion.new" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.singleton">
+<span class="icon"></span><var>instance</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.singleton" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>constructor</p>
+<p>singleton</p>
 
 <div class="heading">Return Values</div>
 <table class="returns">
