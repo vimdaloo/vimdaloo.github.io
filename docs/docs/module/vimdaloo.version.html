@@ -18,7 +18,7 @@
 <div class="button iconleft"><a href="https://github.com/vimdaloo" title=""><img src="../img/i-github.svg?7653a2d" alt=""/><span>github.com/vimdaloo</span></a></div>
 </div>
 <div class="group three">
-<div class="button iconleft"><a href="../class/vimdaloo.version.VimdalooVersion.html" title="vimdaloo.version.VimdalooVersion"><img src="../img/i-left.svg?7653a2d" alt=""/><span>Previous</span></a></div>
+<div class="button iconleft"><a href="../module/vimdaloo.lang.html" title="vimdaloo.lang"><img src="../img/i-left.svg?7653a2d" alt=""/><span>Previous</span></a></div>
 <div class="button iconright"><a href="../module/vimdaloo.html" title="vimdaloo"><span>Next</span><img src="../img/i-right.svg?7653a2d" alt=""/></a></div>
 </div>
 </div>
@@ -30,6 +30,8 @@
 <div class="heading">Contents</div>
 <ul>
 <li><a href="#vimdaloo.version">Module <code>vimdaloo.version</code></a></li>
+<li><a href="#Details"><p>Details</p>
+</a></li>
 <li><a href="#API"><p>API</p>
 </a></li>
 </ul>
@@ -56,6 +58,7 @@
 <div class="modules">
 <div class="heading">Modules</div>
 <ul>
+<li><a href="../module/vimdaloo.lang.html">vimdaloo.lang</a></li>
 <li class="selected"><a href="../module/vimdaloo.version.html">vimdaloo.version</a></li>
 <li><a href="../module/vimdaloo.html">vimdaloo</a></li>
 </ul>
@@ -67,7 +70,17 @@
 <a class="permalink" href="#vimdaloo.version" title="Permalink to this definition">¶</a>
 </h2>
 <div class="inner">
-<p>The vimdaloo version module.</p>
+<p>The <a href="../module/vimdaloo.version.html"><code>vimdaloo.version</code></a> submodule.</p>
+
+</div>
+</div>
+<div class="section">
+<h2 class="section" id="Details">Details
+
+<a class="permalink" href="#Details" title="Permalink to this definition">¶</a>
+</h2>
+<div class="inner">
+<p>Version convenience functions.</p>
 
 </div>
 </div>
@@ -81,6 +94,11 @@
 <h3>Synopsis</h3>
 <div class="heading">Functions</div>
 <table class="functions ">
+<tr>
+<td class="name"><a href="#M.setup"><var>setup</var></a>()</td>
+<td class="doc"><p>Initializes the <a href="../module/vimdaloo.version.html"><code>vimdaloo.version</code></a> submodule</p>
+</td>
+</tr>
 <tr>
 <td class="name"><a href="#M.lua"><var>lua</var></a>()</td>
 <td class="doc"><p>returns the singleton LuaVersion object</p>
@@ -129,6 +147,24 @@
 </table>
 </div>
 <dl class="functions">
+<dt id="M.setup">
+<span class="icon"></span><var>setup</var>(<em>config</em>)
+<a class="permalink" href="#M.setup" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>Initializes the <a href="../module/vimdaloo.version.html"><code>vimdaloo.version</code></a> submodule. Already called automatically by <code>vimdaloo.setup(config)</code>.
+<div class="see">See also <a href="../module/vimdaloo.html">vimdaloo</a></div>
+
+<div class="heading">Parameters</div>
+<table class="parameters">
+<tr>
+<td class="name"><var>config</var></td>
+<td class="types">(<em>table</em>)</td>
+<td class="doc"><p>optional custom user configuration</p>
+</td>
+</tr>
+</table>
+</dd>
 <dt id="M.lua">
 <span class="icon"></span><var>lua</var>()
 <a class="permalink" href="#M.lua" title="Permalink to this definition">¶</a>

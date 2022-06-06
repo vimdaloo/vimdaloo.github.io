@@ -11,7 +11,7 @@ main() {
     luadox \
         --config "${script_dir}/luadoc.conf" \
         --outdir "${script_dir}/docs" \
-        $(find . -name '*.lua' | grep -v 'vimdaloo/lang/init.lua')
+        $(find . -name '*.lua')
 
     cd "${orig_dir}"
 }
