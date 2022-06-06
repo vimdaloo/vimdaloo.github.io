@@ -88,29 +88,29 @@
 <div class="inner">
 <p>The semantic version singleton populated from <a href="https://neovim.io"><code>nvim</code></a> <code>-v</code> and <a href="https://neovim.io/doc/user/lua.html#vim.version"><code>vim.version()</code></a></p>
 <pre><code class="language-lua">-- SemanticVersion parent class gets populated from:
---   io.popen(vim.v.progpath .. ' -v')
+-- io.popen(vim.v.progpath .. ' -v')
 
 -- NvimVersion class gets further populated from:
---   vim.version()
---     NVIM v0.7.0
-       {
-         api_compatible = 0,
-         api_level = 9,
-         api_prerelease = false,
-         major = 0,
-         minor = 7,
-         patch = 0
-       }
---     NVIM v0.8.0-dev+302-gaf2899aee
-       {
-         api_compatible = 0,
-         api_level = 10,
-         api_prerelease = true,
-         major = 0,
-         minor = 8,
-         patch = 0,
-         prerelease = true
-       }
+-- vim.version()
+-- NVIM v0.7.0
+{
+  api_compatible = 0,
+  api_level = 9,
+  api_prerelease = false,
+  major = 0,
+  minor = 7,
+  patch = 0
+}
+-- NVIM v0.8.0-dev+374-ge13dcdf16
+{
+  api_compatible = 0,
+  api_level = 10,
+  api_prerelease = true,
+  major = 0,
+  minor = 8,
+  patch = 0,
+  prerelease = true
+}
 </code></pre>
 
 </div>
@@ -141,12 +141,12 @@
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#vimdaloo.version.NvimVersion.getApiPrerelease"><var>getApiPrerelease</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.isApiPrerelease"><var>isApiPrerelease</var></a>()</td>
 <td class="doc"><p>api_prerelease getter</p>
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#vimdaloo.version.NvimVersion.getPrerelease"><var>getPrerelease</var></a>()</td>
+<td class="name"><a href="#vimdaloo.version.NvimVersion.isPrerelease"><var>isPrerelease</var></a>()</td>
 <td class="doc"><p>prerelease getter</p>
 </td>
 </tr>
@@ -200,9 +200,9 @@
 </tr>
 </table>
 </dd>
-<dt id="vimdaloo.version.NvimVersion.getApiPrerelease">
-<span class="icon"></span><var>getApiPrerelease</var>(<em>self</em>)
-<a class="permalink" href="#vimdaloo.version.NvimVersion.getApiPrerelease" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.isApiPrerelease">
+<span class="icon"></span><var>isApiPrerelease</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.isApiPrerelease" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>api_prerelease getter</p>
@@ -216,9 +216,9 @@
 </tr>
 </table>
 </dd>
-<dt id="vimdaloo.version.NvimVersion.getPrerelease">
-<span class="icon"></span><var>getPrerelease</var>(<em>self</em>)
-<a class="permalink" href="#vimdaloo.version.NvimVersion.getPrerelease" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.version.NvimVersion.isPrerelease">
+<span class="icon"></span><var>isPrerelease</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.version.NvimVersion.isPrerelease" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>prerelease getter</p>
