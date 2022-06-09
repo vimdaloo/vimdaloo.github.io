@@ -112,58 +112,43 @@
 </td>
 </tr>
 <tr>
-<td class="name"><a href="#vimdaloo.color.Color.hex"><var>cmyk</var></a>()</td>
-<td class="doc"><p>HEX color value</p>
-</td>
-</tr>
-<tr>
-<td class="name"><a href="#vimdaloo.color.Color.rgb"><var>rgb</var></a>()</td>
-<td class="doc"><p>provides the RGB color format</p>
-</td>
-</tr>
-<tr>
-<td class="name"><a href="#vimdaloo.color.Color.rgba"><var>rgba</var></a>()</td>
-<td class="doc"><p>provides the RGBA color format</p>
-</td>
-</tr>
-<tr>
 <td class="name"><a href="#vimdaloo.color.Color.cmyk"><var>cmyk</var></a>()</td>
-<td class="doc"><p>provides the CMYK color format</p>
+<td class="doc"><p>provides the CMYK color values</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#vimdaloo.color.Color.hex"><var>hex</var></a>()</td>
+<td class="doc"><p>provides the HEX color value</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#vimdaloo.color.Color.hsb"><var>hsb</var></a>()</td>
+<td class="doc"><p>provides the HSB color values</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#vimdaloo.color.Color.hsl"><var>hsl</var></a>()</td>
-<td class="doc"><p>provides the HSL color format</p>
-</td>
-</tr>
-<tr>
-<td class="name"><a href="#vimdaloo.color.Color.hsla"><var>hsla</var></a>()</td>
-<td class="doc"><p>provides the HSLA color format</p>
+<td class="doc"><p>provides the HSL color values</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#vimdaloo.color.Color.hsv"><var>hsv</var></a>()</td>
-<td class="doc"><p>provides the HSV color format</p>
-</td>
-</tr>
-<tr>
-<td class="name"><a href="#vimdaloo.color.Color.hsva"><var>hsva</var></a>()</td>
-<td class="doc"><p>provides the HSVA color format</p>
+<td class="doc"><p>provides the HSV color values</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#vimdaloo.color.Color.hwb"><var>hwb</var></a>()</td>
-<td class="doc"><p>provides the HWB color format</p>
-</td>
-</tr>
-<tr>
-<td class="name"><a href="#vimdaloo.color.Color.hwba"><var>hwba</var></a>()</td>
-<td class="doc"><p>provides the HWBA color format</p>
+<td class="doc"><p>provides the HWB color values</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#vimdaloo.color.Color.ncol"><var>ncol</var></a>()</td>
-<td class="doc"><p>NCol color representation</p>
+<td class="doc"><p>provides the NCol color representation</p>
+</td>
+</tr>
+<tr>
+<td class="name"><a href="#vimdaloo.color.Color.rgb"><var>rgb</var></a>()</td>
+<td class="doc"><p>provides the RGB color values</p>
 </td>
 </tr>
 <tr>
@@ -224,12 +209,41 @@
 </tr>
 </table>
 </dd>
+<dt id="vimdaloo.color.Color.cmyk">
+<span class="icon"></span><var>cmyk</var>(<em>self</em>, <em>exact</em>)
+<a class="permalink" href="#vimdaloo.color.Color.cmyk" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>provides the CMYK color values</p>
+
+<div class="heading">Parameters</div>
+<table class="parameters">
+<tr>
+<td class="name"><var>self</var></td>
+<td class="types">()</td>
+<td class="doc"></td>
+</tr>
+<tr>
+<td class="name"><var>exact</var></td>
+<td class="types">(<em>boolean</em>)</td>
+<td class="doc"></td>
+</tr>
+</table>
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="types">(<em>table</em>)</td>
+<td class="doc"><p>the CMYK color table</p>
+</td>
+</tr>
+</table>
+</dd>
 <dt id="vimdaloo.color.Color.hex">
-<span class="icon"></span><var>cmyk</var>(<em>self</em>, <em>format</em>)
+<span class="icon"></span><var>hex</var>(<em>self</em>, <em>format</em>)
 <a class="permalink" href="#vimdaloo.color.Color.hex" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>HEX color value</p>
+<p>provides the HEX color value</p>
 
 <div class="heading">Parameters</div>
 <table class="parameters">
@@ -254,12 +268,12 @@
 </tr>
 </table>
 </dd>
-<dt id="vimdaloo.color.Color.rgb">
-<span class="icon"></span><var>rgb</var>(<em>self</em>, <em>multiply</em>)
-<a class="permalink" href="#vimdaloo.color.Color.rgb" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.color.Color.hsb">
+<span class="icon"></span><var>hsb</var>(<em>self</em>, <em>exact</em>)
+<a class="permalink" href="#vimdaloo.color.Color.hsb" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>provides the RGB color format</p>
+<p>provides the HSB color values</p>
 
 <div class="heading">Parameters</div>
 <table class="parameters">
@@ -269,9 +283,9 @@
 <td class="doc"></td>
 </tr>
 <tr>
-<td class="name"><var>multiply</var></td>
+<td class="name"><var>exact</var></td>
 <td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
+<td class="doc"><p>(optional, defaults to false)</p>
 </td>
 </tr>
 </table>
@@ -279,63 +293,17 @@
 <table class="returns">
 <tr>
 <td class="types">(<em>table</em>)</td>
-<td class="doc"><p>the RGB color table</p>
-</td>
-</tr>
-</table>
-</dd>
-<dt id="vimdaloo.color.Color.rgba">
-<span class="icon"></span><var>rgba</var>(<em>self</em>, <em>multiply</em>)
-<a class="permalink" href="#vimdaloo.color.Color.rgba" title="Permalink to this definition">¶</a>
-</dt>
-<dd>
-<p>provides the RGBA color format</p>
-
-<div class="heading">Parameters</div>
-<table class="parameters">
-<tr>
-<td class="name"><var>self</var></td>
-<td class="types">()</td>
-<td class="doc"></td>
-</tr>
-<tr>
-<td class="name"><var>multiply</var></td>
-<td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
-</td>
-</tr>
-</table>
-<div class="heading">Return Values</div>
-<table class="returns">
-<tr>
-<td class="types">(<em>table</em>)</td>
-<td class="doc"><p>the RGBA color table</p>
-</td>
-</tr>
-</table>
-</dd>
-<dt id="vimdaloo.color.Color.cmyk">
-<span class="icon"></span><var>cmyk</var>(<em>self</em>)
-<a class="permalink" href="#vimdaloo.color.Color.cmyk" title="Permalink to this definition">¶</a>
-</dt>
-<dd>
-<p>provides the CMYK color format</p>
-
-<div class="heading">Return Values</div>
-<table class="returns">
-<tr>
-<td class="types">(<em>table</em>)</td>
-<td class="doc"><p>the CMYK color table</p>
+<td class="doc"><p>the HSB color table</p>
 </td>
 </tr>
 </table>
 </dd>
 <dt id="vimdaloo.color.Color.hsl">
-<span class="icon"></span><var>hsl</var>(<em>self</em>, <em>multiply</em>)
+<span class="icon"></span><var>hsl</var>(<em>self</em>, <em>exact</em>)
 <a class="permalink" href="#vimdaloo.color.Color.hsl" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>provides the HSL color format</p>
+<p>provides the HSL color values</p>
 
 <div class="heading">Parameters</div>
 <table class="parameters">
@@ -345,9 +313,9 @@
 <td class="doc"></td>
 </tr>
 <tr>
-<td class="name"><var>multiply</var></td>
+<td class="name"><var>exact</var></td>
 <td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
+<td class="doc"><p>(optional, defaults to false)</p>
 </td>
 </tr>
 </table>
@@ -360,42 +328,12 @@
 </tr>
 </table>
 </dd>
-<dt id="vimdaloo.color.Color.hsla">
-<span class="icon"></span><var>hsla</var>(<em>self</em>, <em>multiply</em>)
-<a class="permalink" href="#vimdaloo.color.Color.hsla" title="Permalink to this definition">¶</a>
-</dt>
-<dd>
-<p>provides the HSLA color format</p>
-
-<div class="heading">Parameters</div>
-<table class="parameters">
-<tr>
-<td class="name"><var>self</var></td>
-<td class="types">()</td>
-<td class="doc"></td>
-</tr>
-<tr>
-<td class="name"><var>multiply</var></td>
-<td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
-</td>
-</tr>
-</table>
-<div class="heading">Return Values</div>
-<table class="returns">
-<tr>
-<td class="types">(<em>table</em>)</td>
-<td class="doc"><p>the HSLA color table</p>
-</td>
-</tr>
-</table>
-</dd>
 <dt id="vimdaloo.color.Color.hsv">
-<span class="icon"></span><var>hsv</var>(<em>self</em>, <em>multiply</em>)
+<span class="icon"></span><var>hsv</var>(<em>self</em>, <em>exact</em>)
 <a class="permalink" href="#vimdaloo.color.Color.hsv" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>provides the HSV color format</p>
+<p>provides the HSV color values</p>
 
 <div class="heading">Parameters</div>
 <table class="parameters">
@@ -405,9 +343,9 @@
 <td class="doc"></td>
 </tr>
 <tr>
-<td class="name"><var>multiply</var></td>
+<td class="name"><var>exact</var></td>
 <td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
+<td class="doc"><p>(optional, defaults to false)</p>
 </td>
 </tr>
 </table>
@@ -420,42 +358,12 @@
 </tr>
 </table>
 </dd>
-<dt id="vimdaloo.color.Color.hsva">
-<span class="icon"></span><var>hsva</var>(<em>self</em>, <em>multiply</em>)
-<a class="permalink" href="#vimdaloo.color.Color.hsva" title="Permalink to this definition">¶</a>
-</dt>
-<dd>
-<p>provides the HSVA color format</p>
-
-<div class="heading">Parameters</div>
-<table class="parameters">
-<tr>
-<td class="name"><var>self</var></td>
-<td class="types">()</td>
-<td class="doc"></td>
-</tr>
-<tr>
-<td class="name"><var>multiply</var></td>
-<td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
-</td>
-</tr>
-</table>
-<div class="heading">Return Values</div>
-<table class="returns">
-<tr>
-<td class="types">(<em>table</em>)</td>
-<td class="doc"><p>the HSVA color table</p>
-</td>
-</tr>
-</table>
-</dd>
 <dt id="vimdaloo.color.Color.hwb">
-<span class="icon"></span><var>hwb</var>(<em>self</em>, <em>multiply</em>)
+<span class="icon"></span><var>hwb</var>(<em>self</em>, <em>exact</em>)
 <a class="permalink" href="#vimdaloo.color.Color.hwb" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>provides the HWB color format</p>
+<p>provides the HWB color values</p>
 
 <div class="heading">Parameters</div>
 <table class="parameters">
@@ -465,9 +373,9 @@
 <td class="doc"></td>
 </tr>
 <tr>
-<td class="name"><var>multiply</var></td>
+<td class="name"><var>exact</var></td>
 <td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
+<td class="doc"><p>(optional, defaults to false)</p>
 </td>
 </tr>
 </table>
@@ -480,12 +388,12 @@
 </tr>
 </table>
 </dd>
-<dt id="vimdaloo.color.Color.hwba">
-<span class="icon"></span><var>hwba</var>(<em>self</em>, <em>multiply</em>)
-<a class="permalink" href="#vimdaloo.color.Color.hwba" title="Permalink to this definition">¶</a>
+<dt id="vimdaloo.color.Color.ncol">
+<span class="icon"></span><var>ncol</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.color.Color.ncol" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>provides the HWBA color format</p>
+<p>provides the NCol color representation</p>
 
 <div class="heading">Parameters</div>
 <table class="parameters">
@@ -494,29 +402,7 @@
 <td class="types">()</td>
 <td class="doc"></td>
 </tr>
-<tr>
-<td class="name"><var>multiply</var></td>
-<td class="types">(<em>boolean</em>)</td>
-<td class="doc"><p>(optional, defaults to config or true)</p>
-</td>
-</tr>
 </table>
-<div class="heading">Return Values</div>
-<table class="returns">
-<tr>
-<td class="types">(<em>table</em>)</td>
-<td class="doc"><p>the HWBA color table</p>
-</td>
-</tr>
-</table>
-</dd>
-<dt id="vimdaloo.color.Color.ncol">
-<span class="icon"></span><var>ncol</var>(<em>self</em>)
-<a class="permalink" href="#vimdaloo.color.Color.ncol" title="Permalink to this definition">¶</a>
-</dt>
-<dd>
-<p>NCol color representation</p>
-
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
@@ -526,13 +412,69 @@
 </tr>
 </table>
 </dd>
+<dt id="vimdaloo.color.Color.rgb">
+<span class="icon"></span><var>rgb</var>(<em>self</em>, <em>exact</em>, <em>percent</em>)
+<a class="permalink" href="#vimdaloo.color.Color.rgb" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>provides the RGB color values</p>
+
+<div class="heading">Parameters</div>
+<table class="parameters">
+<tr>
+<td class="name"><var>self</var></td>
+<td class="types">()</td>
+<td class="doc"></td>
+</tr>
+<tr>
+<td class="name"><var>exact</var></td>
+<td class="types">(<em>boolean</em>)</td>
+<td class="doc"><p>(optional, defaults to false)</p>
+</td>
+</tr>
+<tr>
+<td class="name"><var>percent</var></td>
+<td class="types">(<em>boolean</em>)</td>
+<td class="doc"><p>(optional, defaults to false)</p>
+</td>
+</tr>
+</table>
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="types">(<em>table</em>)</td>
+<td class="doc"><p>the RGB color table</p>
+</td>
+</tr>
+</table>
+</dd>
 <dt id="vimdaloo.color.Color.toString">
-<span class="icon"></span><var>toString</var>(<em>self</em>)
+<span class="icon"></span><var>toString</var>(<em>self</em>, <em>exact</em>, <em>rgb_percent</em>)
 <a class="permalink" href="#vimdaloo.color.Color.toString" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
 <p>full version string; overrides <a href="../class/vimdaloo.lang.Object.html#vimdaloo.lang.Object.toString"><code>vimdaloo.lang.Object:toString()</code></a></p>
 
+<div class="heading">Parameters</div>
+<table class="parameters">
+<tr>
+<td class="name"><var>self</var></td>
+<td class="types">()</td>
+<td class="doc"></td>
+</tr>
+<tr>
+<td class="name"><var>exact</var></td>
+<td class="types">(<em>boolean</em>)</td>
+<td class="doc"><p>(optional, defaults to false)</p>
+</td>
+</tr>
+<tr>
+<td class="name"><var>rgb_percent</var></td>
+<td class="types">(<em>boolean</em>)</td>
+<td class="doc"><p>(optional defaults to false)</p>
+</td>
+</tr>
+</table>
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
