@@ -1,8 +1,8 @@
 :target {
-    background-color: #80ff80 !important;
+    background-color: #ffe080 !important;
     color: black !important;
-    border-bottom: 1px solid #00cc00 !important;
-    border-top: 1px solid #00cc00 !important;
+    border-bottom: 1px solid #cca940 !important;
+    border-top: 1px solid #cca940 !important;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 
 div.topbar {
     box-sizing: border-box;
-    background-color: #008000;
+    background-color: #465158;
     position: fixed;
     display: flex;
     align-items: center;
@@ -73,13 +73,13 @@ div.topbar div.button.solid a {
 
 div.topbar div.button.solid a,
 div.topbar div.button a:hover {
-    background-color: #009a00;
+    background-color: #697983;
     text-shadow: 0 1px rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     border: none;
 }
 div.topbar div.button.solid a:hover {
-    background-color: #00bb00;
+    background-color: #8aa0ad;
 }
 
 div.topbar div.button a img {
@@ -117,14 +117,12 @@ div.sidebar {
     border-right: 1px solid #ccc;
     position: fixed;
     overflow-y: auto;
-    font-size: 90%;
 }
 
 
 div.body {
     margin-left: 15em;
     margin-top: 2.5em;
-    font-size: 90%;
 }
 
 div.sidebar div.heading {
@@ -187,7 +185,7 @@ div.section h2 {
     background-color: #eeeeee;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
-    font-size: 100%;
+    font-size: 120%;
 }
 
 div.manual h2,
@@ -241,7 +239,7 @@ div.hierarchy li span em {
 }
 
 div.hierarchy li.self span {
-    background-color: #ceffce;
+    background-color: #fbedc3;
 }
 
 h1,
@@ -251,7 +249,7 @@ div.section h2.module {
     background-color: #555;
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
-    font-size: 110%;
+    font-size: 140%;
 }
 
 
@@ -268,7 +266,7 @@ var, a code {
 }
 
 div.see::before {
-    content: "👁️ ";
+    content: "👉 ";
 }
 
 h3.fields, h3.functions {
@@ -292,7 +290,6 @@ dt {
     /* Ensures when :target applies (which adds borders) we don't affect layout */
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
-    font-size:85%;
 }
 dt var {
     font-size: 1.15em;
@@ -377,9 +374,9 @@ div.synopsis div.heading {
 }
 
 div.synopsis table {
-    border-top: 1px solid #94ff94;
-    border-bottom: 1px solid #94ff94;
-    background-color: #ceffce;
+    border-top: 1px solid #d2b089;
+    border-bottom: 1px solid #d2b089;
+    background-color: #f8f0e6;
     width: 95%;
     margin: 1em auto;
     border-collapse: collapse;
@@ -389,7 +386,7 @@ div.synopsis td {
     vertical-align: top;
 }
 div.synopsis tr:not(:last-child) td {
-    border-bottom: 1px solid #bbffbb;
+    border-bottom: 1px solid #e2d0ba;
 }
 
 div.synopsis td:first-child {
@@ -421,8 +418,8 @@ div.synopsis td a.permalink {
 
 
 div.admonition {
-    border: 1px solid #009400;
-    background-color: #f6fff6;
+    border: 1px solid #609060;
+    background-color: #e9ffe9;
     width: 90%;
     margin: 1.5em auto;
 }
@@ -444,22 +441,22 @@ div.admonition div.body {
 
 
 div.warning {
-    border: 1px solid #800000;
-    background-color: #e2ffe2;
+    border: 1px solid #900000;
+    background-color: #ffe9e9;
 }
 
 div.warning div.title {
-    background-color: #b30000;
-    border-bottom: 1px solid #800000;
+    background-color: #b04040;
+    border-bottom: 1px solid #900000;
 }
 
 div.note div.title {
-    background-color: #9cba9c;
-    border-bottom: 1px solid #009400;
+    background-color: #70A070;
+    border-bottom: 1px solid #609060;
 }
 
 dl.fields dt span.icon::after {
-    content: "⛳ ";
+    content: "🏷️ ";
     vertical-align: middle;
     font-size: 110%;
 }
@@ -497,13 +494,13 @@ dl.fields dt span.type::before {
 }
 
 dl.functions dt span.icon::after {
-    content: "🏌️ ";
+    content: "🏃‍♂️ ";
     vertical-align: middle;
     font-size: 140%;
 }
 
 a.permalink:hover {
-    color: #cd0000 !important;
+    color: #c60f0f !important;
     border: none;
 }
 
@@ -585,16 +582,16 @@ div.result.result-module span::after {
     content: "📦 ";
 }
 div.result.result-field span::after {
-    content: "⛳ ";
+    content: "🏷️ ";
 }
 div.result.result-function span::after {
-    content: "🏌️ ";
+    content: "🏃‍♂️ ";
 }
 div.result.result-section span::after {
     content: "📓 ";
 }
 div.result b {
-    background-color: #a7ffa7;
+    background-color: #faffb8;
 }
 
 table.user {
@@ -609,7 +606,7 @@ table.user {
 }
 
 table.user thead tr {
-    background-color: #005900;
+    background-color: #3a5e75;
     color: #ffffff;
     text-align: left;
 }
@@ -628,5 +625,5 @@ table.user tbody tr:nth-of-type(even) {
 }
 
 table.user tbody tr:last-of-type {
-    border-bottom: 3px solid #005900;
+    border-bottom: 3px solid #3a5e75;
 }

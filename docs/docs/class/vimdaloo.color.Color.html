@@ -59,10 +59,10 @@
 <div class="modules">
 <div class="heading">Modules</div>
 <ul>
+<li><a href="../module/vimdaloo.html">vimdaloo</a></li>
 <li><a href="../module/vimdaloo.lang.html">vimdaloo.lang</a></li>
 <li><a href="../module/vimdaloo.version.html">vimdaloo.version</a></li>
 <li><a href="../module/vimdaloo.color.html">vimdaloo.color</a></li>
-<li><a href="../module/vimdaloo.html">vimdaloo</a></li>
 </ul>
 </div>
 </div>
@@ -112,13 +112,18 @@
 </td>
 </tr>
 <tr>
+<td class="name"><a href="#vimdaloo.color.Color.getNumbers"><var>getNumbers</var></a>()</td>
+<td class="doc"><p>numbers getter</p>
+</td>
+</tr>
+<tr>
 <td class="name"><a href="#vimdaloo.color.Color.cmyk"><var>cmyk</var></a>()</td>
 <td class="doc"><p>provides the CMYK color values</p>
 </td>
 </tr>
 <tr>
 <td class="name"><a href="#vimdaloo.color.Color.hex"><var>hex</var></a>()</td>
-<td class="doc"><p>provides the HEX color value</p>
+<td class="doc"><p>provides the HEX color formats</p>
 </td>
 </tr>
 <tr>
@@ -160,7 +165,7 @@
 </div>
 <dl class="functions">
 <dt id="vimdaloo.color.Color.new">
-<span class="icon"></span><var>Color</var>(<em>self</em>, <em>value</em>, <em>names</em>)
+<span class="icon"></span><var>Color</var>(<em>self</em>, <em>value</em>, <em>names</em>, <em>numbers</em>)
 <a class="permalink" href="#vimdaloo.color.Color.new" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
@@ -184,6 +189,12 @@
 <td class="doc"><p>(optional)</p>
 </td>
 </tr>
+<tr>
+<td class="name"><var>numbers</var></td>
+<td class="types">(<em>numbers</em>)</td>
+<td class="doc"><p>(optional)</p>
+</td>
+</tr>
 </table>
 <div class="heading">Return Values</div>
 <table class="returns">
@@ -204,7 +215,23 @@
 <table class="returns">
 <tr>
 <td class="types">(<em>table</em>)</td>
-<td class="doc"><p>names the known color names</p>
+<td class="doc"><p>the color names, if known</p>
+</td>
+</tr>
+</table>
+</dd>
+<dt id="vimdaloo.color.Color.getNumbers">
+<span class="icon"></span><var>getNumbers</var>(<em>self</em>)
+<a class="permalink" href="#vimdaloo.color.Color.getNumbers" title="Permalink to this definition">¶</a>
+</dt>
+<dd>
+<p>numbers getter</p>
+
+<div class="heading">Return Values</div>
+<table class="returns">
+<tr>
+<td class="types">(<em>table</em>)</td>
+<td class="doc"><p>the color numbers, if known</p>
 </td>
 </tr>
 </table>
@@ -239,31 +266,17 @@
 </table>
 </dd>
 <dt id="vimdaloo.color.Color.hex">
-<span class="icon"></span><var>hex</var>(<em>self</em>, <em>format</em>)
+<span class="icon"></span><var>hex</var>(<em>self</em>)
 <a class="permalink" href="#vimdaloo.color.Color.hex" title="Permalink to this definition">¶</a>
 </dt>
 <dd>
-<p>provides the HEX color value</p>
+<p>provides the HEX color formats</p>
 
-<div class="heading">Parameters</div>
-<table class="parameters">
-<tr>
-<td class="name"><var>self</var></td>
-<td class="types">()</td>
-<td class="doc"></td>
-</tr>
-<tr>
-<td class="name"><var>format</var></td>
-<td class="types">(<em>string</em>)</td>
-<td class="doc"><p>value (optional, defaults to '#FFFFFF')</p>
-</td>
-</tr>
-</table>
 <div class="heading">Return Values</div>
 <table class="returns">
 <tr>
 <td class="types">(<em>table</em>)</td>
-<td class="doc"><p>the HEX color table</p>
+<td class="doc"><p>the HEX color formats</p>
 </td>
 </tr>
 </table>
